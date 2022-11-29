@@ -1,4 +1,4 @@
-package org.example.vo;
+package com.smt.vo;
 
 import lombok.Getter;
 import lombok.Setter;

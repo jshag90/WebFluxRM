@@ -1,4 +1,4 @@
-package org.example.repository;
+package com.smt.repository;
 
 import org.springframework.data.r2dbc.repository.R2dbcRepository;
 import reactor.core.publisher.Mono;

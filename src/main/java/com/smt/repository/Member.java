@@ -1,4 +1,4 @@
-package org.example.repository;
+package com.smt.repository;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

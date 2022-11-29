@@ -1,8 +1,8 @@
-package org.example.endpoint;
+package com.smt.endpoint;
 
-import org.example.repository.Member;
-import org.example.repository.MemberRepository;
-import org.example.vo.NewMember;
+import com.smt.repository.Member;
+import com.smt.vo.NewMember;
+import com.smt.repository.MemberRepository;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
