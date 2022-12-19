@@ -3,17 +3,15 @@ package com.smt.endpoint;
 import com.smt.repository.Member;
 import com.smt.vo.NewMember;
 import com.smt.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 @RestController
+@RequiredArgsConstructor
 public class MemberEndpoint {
 
     private final MemberRepository memberRepository;
-
-    public MemberEndpoint(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
 
     @GetMapping("/member/{id}")
     public Mono<Member> findMember(@PathVariable long id) {
