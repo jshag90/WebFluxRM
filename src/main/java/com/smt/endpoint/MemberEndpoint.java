@@ -1,8 +1,8 @@
 package com.smt.endpoint;
 
 import com.smt.repository.Member;
-import com.smt.vo.NewMember;
 import com.smt.repository.MemberRepository;
+import com.smt.vo.NewMember;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;

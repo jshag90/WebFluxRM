@@ -1,8 +1,6 @@
 package com.smt.endpoint;
 
-import com.smt.service.ClientService;
 import com.smt.service.PolicyService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -10,11 +10,12 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class PolicyService {
-
-
 
     private final PolicyAdminSysRepository policyAdminSysRepository;
     private final PolicyClientRepository policyClientRepository;
@@ -22,6 +23,14 @@ public class PolicyService {
     public Flux<Object> getClientAgentPolicy() {
         Mono<PolicyAdminSys> monoPolicyAdminSys = policyAdminSysRepository.findById(1L);
         Mono<PolicyClient> monoPolicyClient = policyClientRepository.findById(1L);
+
+        List<String> fruitList = new ArrayList<>();
+        fruitList.add("Apple");
+        fruitList.add("Orange");
+
+        Flux<String> fruitFlux = Flux.fromIterable(fruitList);
+
+
         return Flux.merge(monoPolicyAdminSys, monoPolicyClient);
     }
 }
